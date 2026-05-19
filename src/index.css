@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Baloo 2", ui-sans-serif, system-ui, sans-serif;
+  --animate-spin-slow: spin 8s linear infinite;
+  --animate-progress: progress 3s ease-in-out infinite;
+
+  /* Custom Toy Theme Colors */
+  --color-toy-red: #d32f2f;
+  --color-toy-yellow: #fbc02d;
+  --color-toy-orange: #f57c00;
+  --color-toy-green: #388e3c;
+  --color-toy-black: #1a1a1a;
+  --color-toy-brown: #5d4037;
+  --color-toy-wood-bg: #fffbf0;
+}
+
+@keyframes progress {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-toy-wood-bg);
+  overflow: hidden;
+}
+
+/* Hide scrollbar for a cleaner app look */
+.app-container::-webkit-scrollbar {
+  display: none;
+}
+.app-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

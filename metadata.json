@@ -1,0 +1,8 @@
+{
+  "name": "Channapatna Namma Pride",
+  "description": "Authenticity \u0026 Storytelling app for Channapatna toys.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
